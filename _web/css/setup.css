@@ -1,39 +1,20 @@
 
 body {
   font-family: sans-serif;
-  width:100%; 
   overflow: hidden;
+  color: white;
+  width:100%;
   height:100%; 
   margin:0px;
-  color: white;
 }
 
-#image_dropzone {
-
+.drop {
   width: 260px;
   height: 260px;
   border: 2px solid black;
-
-}
-
-#segmentation_dropzone {
-
-  width: 260px;
-  height: 260px;
-  border: 2px solid black;
-
 }
 
 .bg {
-  background: url('../gfx/setup.png');
-  width: 100%;
-  height: 100%;
-  background-size:100% 100%;
-  background-repeat:no-repeat;
-}
-
-.bg_loading {
-  background: url('../gfx/loading.gif');
   width: 100%;
   height: 100%;
   background-size:100% 100%;
@@ -41,14 +22,25 @@ body {
 }
 
 #setup {
-  width: 100%;
-  height: 100%;
+  background: url('../gfx/setup.png');
 }
 
-#log {
-  position: absolute;
-  bottom: 20%;
-  width: 300px;
-  left: 50%;
-  margin-left: -150px;
+#loading {
+  background: url('../gfx/loading.gif');
+}
+
+.vert {
+  top:50%;
+  position:absolute;
+  margin-top:-130px;
+  text-align:center;
+}
+
+
+#left {
+  left:25%;
+}
+
+#right {
+  right:25%;
 }

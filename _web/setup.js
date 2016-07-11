@@ -11,7 +11,6 @@ function init() {
 };
 
 function noop_handler(evt) {
-
   evt.stopPropagation();
   evt.preventDefault();
 };
@@ -27,11 +26,10 @@ function on_drop(evt, elem) {
     return;
   }
 
-  var list = document.getElementById(evt.target.id.split('_')[0]+'_files');
+  var elem = evt.target.id.split('_')[0]+'_files';
+  var list = document.getElementById(elem);
   for (var i=0; i<files.length;i++) {
-
     list.innerHTML += files[i].name+'<br>'
-
   }
 
   upload(files);
